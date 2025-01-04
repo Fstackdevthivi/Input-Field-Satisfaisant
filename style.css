@@ -1,0 +1,42 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+  }
+  
+  .input-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  #satisfying-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    background: #fff;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
+  }
+  
+  #satisfying-input::placeholder {
+    color: #aaa;
+    transition: opacity 0.3s ease;
+  }
+  
+  #satisfying-input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 15px rgba(106, 17, 203, 0.5);
+    transform: scale(1.05);
+  }
+  
+  #satisfying-input:focus::placeholder {
+    opacity: 0;
+  }
+  
